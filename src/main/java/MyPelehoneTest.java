@@ -23,7 +23,7 @@ public class MyPelehoneTest {
 
     }
 
-    public static void OpenApp() throws MalformedURLException, InterruptedException {
+    private static void OpenApp() throws MalformedURLException, InterruptedException {
         DesiredCapabilities cap = new DesiredCapabilities();
         File app = new File("Pl.apk");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "R58M80728BB");
@@ -36,7 +36,7 @@ public class MyPelehoneTest {
       //  cap.setCapability("appPackage", "com.pelephone.launcher");
        // cap.setCapability("appActivity", "com.pelephone.launcher.LauncherButtons");
 
-       //  cap.setCapability("appPackage", "com.pelephone_mobile");
+         cap.setCapability("appPackage", "com.pelephone_mobile");
        //  cap.setCapability("appActivity", "pelephone_mobile.ui.activities.LoginActivity");
         //cap.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
 
