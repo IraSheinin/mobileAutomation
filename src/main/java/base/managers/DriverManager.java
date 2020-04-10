@@ -13,7 +13,6 @@ import java.util.HashMap;
 
 public class DriverManager {
     private static HashMap<String, URL> hosts;
-    private static String unlockPackage= "io.appium.unlock";
 
     private static DesiredCapabilities getCaps(String deviceID){
         MyLogger.info("Creating driver caps for device: "+deviceID);
